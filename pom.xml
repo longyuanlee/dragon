@@ -1,7 +1,67 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.longyuanlee.dragon</groupId>
-  <artifactId>dragon</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.longyuanlee.dragon</groupId>
+	<artifactId>dragon</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>dragon-dao</module>
+		<module>dragon-service</module>
+		<module>dragon-web</module>
+		<module>dragon-utils</module>
+		<module>dragon-exception</module>
+		<module>dragon-model</module>
+		<module>dragon-task</module>
+	</modules>
+
+	<properties>
+		<dragon.deploy.version>0.0.1-SNAPSHOT</dragon.deploy.version>
+		<spring.version>3.2.3.RELEASE</spring.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.longyuanlee.dragon</groupId>
+				<artifactId>dragon-model</artifactId>
+				<version>${dragon.deploy.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.longyuanlee.dragon</groupId>
+				<artifactId>dragon-task</artifactId>
+				<version>${dragon.deploy.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.longyuanlee.dragon</groupId>
+				<artifactId>dragon-dao</artifactId>
+				<version>${dragon.deploy.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.longyuanlee.dragon</groupId>
+				<artifactId>dragon-service</artifactId>
+				<version>${dragon.deploy.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.longyuanlee.dragon</groupId>
+				<artifactId>dragon-exception</artifactId>
+				<version>${dragon.deploy.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.longyuanlee.dragon</groupId>
+				<artifactId>dragon-utils</artifactId>
+				<version>${dragon.deploy.version}</version>
+			</dependency>
+
+		</dependencies>
+
+	</dependencyManagement>
+
 </project>
