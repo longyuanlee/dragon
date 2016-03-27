@@ -1,0 +1,11 @@
+.settings
+.metadata
+.classpath
+.gitignore
+.project
+.externalToolBuilders
+.class
+test-output
+.js
+.jsp
+.springWebflow
