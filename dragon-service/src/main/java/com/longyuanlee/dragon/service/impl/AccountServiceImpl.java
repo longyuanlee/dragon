@@ -8,7 +8,7 @@ import com.longyuanlee.dragon.service.AccountService;
 
 @Service
 public class AccountServiceImpl implements AccountService {
-	
+
 	@Autowired
 	private AccountDao accountDao;
 
@@ -16,7 +16,11 @@ public class AccountServiceImpl implements AccountService {
 	public String get() {
 		System.out.println("accountGet");
 		accountDao.get();
-		return "";
+		int i = 0;
+		int j = 0;
+		j = i / j;
+		throw new RuntimeException();
+
 	}
 
 }

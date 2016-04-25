@@ -24,7 +24,8 @@
 	<context:annotation-config />
 	<context:component-scan base-package="com.longyuanlee.dragon.web" />
 	<context:component-scan base-package="com.longyuanlee.dragon" />
-	
-		<import resource="classpath*:/spring-dragon-service.xml" />
+	<import resource="classpath*:/spring-dragon-service.xml" />
+
+	<bean class="com.longyuanlee.dragon.web.errorpage.DragonExceptionResolver" />
 
 </beans>

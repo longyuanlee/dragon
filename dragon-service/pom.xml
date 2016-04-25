@@ -31,6 +31,11 @@
 			<artifactId>dragon-dao</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>com.longyuanlee.dragon</groupId>
+			<artifactId>dragon-mvc</artifactId>
+		</dependency>
+
 	</dependencies>
 
 </project>
